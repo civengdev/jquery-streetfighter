@@ -1,0 +1,94 @@
+/*Font*/
+
+@font-face {
+	font-family: 'Comfortaa', bold;
+	src: url('../fonts/Comfortaa-Bold.ttf');
+}
+/* Body */
+
+body {
+	background-color: black;
+}
+
+/* Main Page */
+.main {
+    background-color: white;
+    height: 500px;
+    min-width: 1200px;
+    margin-top: 110px;
+    padding-left: 67px;
+    position: relative;
+    z-index: 1;	
+}
+
+/* Ryu and Hadoken Images and Properties */
+
+.ryu {
+width: 659px;
+height: 494px;
+float: left;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+width: 659px;
+height: 494px;
+}
+
+.ryu-ready, .ryu-throwing {
+display: none;
+}
+
+.ryu-ready {
+background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still {
+background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing {
+background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool {
+background-image: url('../images/ryu-cool.gif');	
+display: none;
+}
+
+.hadoken, .ryu-ready, .ryu-still, .ryu-throwing {
+background-repeat: no-repeat;
+}
+
+.hadouken {
+background-image: url('../images/hadouken.gif');
+width: 156px;
+height: 90px;
+float: left;
+display: none;
+top: 170px;
+left: 581px;
+position: absolute;
+z-index: 9999;
+}
+
+/*Text Properties*/
+.text-content {
+	position: absolute;
+	left: 650px;
+	height: 425px;
+	width: 600px;
+	padding-top: 75px;
+}
+.how-to {
+	display: block;
+	font-style: italic;
+}
+.how-to p {
+width: 50%;
+color: black;
+font-size: 24px;
+line-height: 45px;
+}
+.how-to p + p {
+margin-left: 275px;
+}
